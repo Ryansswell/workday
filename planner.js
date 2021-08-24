@@ -1,6 +1,9 @@
-var currenthour = (moment().format("M"))-9;
+var currenthour = (moment().format("M")) - 9;
 var timeDisplayEl = document.getElementById("currentDay");
 var eachBlock = $(".container").children("div")
+var hour6 = $("#hour-6");
+var hour7 = $("#hour-7");
+var hour8 = $("#hour-8");
 var hour9 = $("#hour-9");
 var hour10 = $("#hour-10");
 var hour11 = $("#hour-11");
@@ -20,17 +23,17 @@ function displayTime() {
 
 setInterval[displayTime, 1000];
 
-function format () {
+function format() {
     alert("hey")
-        for(var i = 0; 1 < eachBlock.length; i++){
-            if (eachBlock > 1) {
-                eachBlock[i].addclass("past")
-            } if (eachBlock < 1) {
-                eachBlock[i].addClass("future")
-            } if (eachBlock === i){
-                eachBlock[i].addClass("present")
-            }
+    for (var i = 0; 1 < eachBlock.length; i++) {
+        if (eachBlock > 1) {
+            eachBlock[i].addclass("past")
+        } if (eachBlock < 1) {
+            eachBlock[i].addClass("future")
+        } if (eachBlock === i) {
+            eachBlock[i].addClass("present")
         }
+    }
 }
 
 saveButton.on("click", function (event) {
