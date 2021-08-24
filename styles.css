@@ -73,3 +73,13 @@ textarea:focus {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+.notification {
+  display: none;
+  padding-bottom: 12px;
+  color: #020202;
+}
+
+.show {
+  display: block;
+}
