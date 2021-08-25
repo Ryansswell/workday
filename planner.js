@@ -1,8 +1,6 @@
 var currenthour = (moment().format("M")) - 9;
 var timeDisplayEl = document.getElementById("currentDay");
 var eachBlock = $(".container").children("div")
-var hour6 = $("#hour-6");
-var hour7 = $("#hour-7");
 var hour8 = $("#hour-8");
 var hour9 = $("#hour-9");
 var hour10 = $("#hour-10");
